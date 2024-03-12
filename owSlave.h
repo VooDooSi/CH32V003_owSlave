@@ -68,9 +68,9 @@ void (*_callback_selected)(void);  // called when this device is selected
 		TIM1->CH1CVR = us_inc; \
 	}
 
-#define ONEWIRE_PIN_RELEASE() funDigitalWrite(PC6, FUN_HIGH)  // GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_C, 6), high)
-#define ONEWIRE_PIN_DRIVE_LOW() funDigitalWrite(PC6, FUN_LOW) // GPIO_digitalWrite(GPIOv_from_PORT_PIN(GPIO_port_C, 6), low)
-#define ONEWIRE_PIN_READ() funDigitalRead(PC6)				  // GPIO_digitalRead(GPIOv_from_PORT_PIN(GPIO_port_C, 6))
+#define ONEWIRE_PIN_RELEASE() funDigitalWrite(PC6, FUN_HIGH)  
+#define ONEWIRE_PIN_DRIVE_LOW() funDigitalWrite(PC6, FUN_LOW) 
+#define ONEWIRE_PIN_READ() funDigitalRead(PC6)
 
 /**
  * @brief Starts the OneWire slave device.
